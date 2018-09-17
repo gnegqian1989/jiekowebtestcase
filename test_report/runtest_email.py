@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#coading:utf-8
+#coding:utf-8
 
 import unittest
 import requests
