@@ -1,0 +1,6 @@
+#!/usr/bin/python
+#coading:utf-8
+
+1.package  ������õ�����չ��
+2.test_case  ���ڽӿڲ�������
+3.test_report  ��Ų��Ա���
