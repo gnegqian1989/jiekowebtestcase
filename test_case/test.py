@@ -15,7 +15,7 @@ class MyTest(unittest.TestCase):
 class test_login(MyTest):
 
     def test_login1(self):
-        '''测试用例1：哈哈'''
+        '''测试用例1：测试pc端登录'''
         self.url = "https://fresh.weijingyuan.com.cn/JinMen/main/login.do?account=admin&psw=23698741&strApp=hexi"
         self.headers = {"Content-Type":"application/json"}
         # self.data = {

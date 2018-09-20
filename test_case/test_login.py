@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#coading:utf-8
+#coding:utf-8
 
 # 人力情报 pc端登录接口  https://fresh.weijingyuan.com.cn/JinMen/main/login.do?account=admin&psw=23698741&strApp=hexi
 
