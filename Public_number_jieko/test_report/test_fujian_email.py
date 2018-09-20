@@ -24,9 +24,9 @@ class Send_NewReport():
         file = os.path.join(report_dire,lists[-1])
         print(file)
         # return file
+
         # 发送邮件
         # 发送邮件服务器 qq邮箱
-
         smtpserver = 'smtp.qq.com'
         # 发送邮箱用户名和密码
         sender = '1585620775@qq.com'
