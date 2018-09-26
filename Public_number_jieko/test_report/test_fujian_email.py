@@ -14,7 +14,7 @@ from BSTestRunner import BSTestRunner
 
 class Send_NewReport():
     # 存放测试报告文件夹
-    report_dire =r'D:\shuo-huahua\Public_number_jieko_0919\test_report\fujian_reoprt'
+    report_dire =r'D:\shuo-huahua\Public_number_jieko_0919\Public_number_jieko\test_report\fujian_reoprt'
     def Send_NewReport(report_dire):
         # os.listdir()方法用于返回指定文件包含文件或者文件夹的名字列表
         lists = os.listdir(report_dire)
@@ -36,7 +36,7 @@ class Send_NewReport():
         receiver = ['1585620775@qq.com']
         # 发送邮件和内容
         dateT = time.strftime('%Y-%m-%d')
-        subject = '人力情报.liate Test Report'+dateT
+        subject = '河西力量公众号接口测试.liate Test Report'+dateT
         content = '<html><h1>人力情报 Test Report %s</h1>' \
                   '<body><body><p>Please download the testreport,Thank you!  此报告建议下载后查看！谢谢！</p></html>'%dateT
 
@@ -68,18 +68,18 @@ class Send_NewReport():
 
 if __name__ == '__main__':
     # 定位到当前目录
-    test_dir = r'D:\shuo-huahua\Public_number_jieko_0919\test_case'
+    test_dir = r'D:\shuo-huahua\Public_number_jieko_0919\Public_number_jieko\test_case'
     # 执行所有test开头方法
     discovery = unittest.defaultTestLoader.discover(test_dir,pattern = 'test*.py')
     #存放测试报告的文件夹
-    report_dir = r'D:\shuo-huahua\Public_number_jieko_0919\test_report\fujian_reoprt'
+    report_dir = r'D:\shuo-huahua\Public_number_jieko_0919\Public_number_jieko\test_report\fujian_reoprt'
     #报告命名格式
     now = time.strftime('%Y-%m-%d %H%M%S')
     #报告文件完整路径
     report_name = report_dir + '\\'+ now + ' result.html'
     #打开文件再报告文件写入测试结果
     with open(report_name,'wb') as f:
-        runner = BSTestRunner(stream = f,title ='人力情报 Test Report',
+        runner = BSTestRunner(stream = f,title ='河西力量公众号接口测试 Test Report',
                               description = 'Test Case Result by Chy'
         )
         runner.run(discovery)
