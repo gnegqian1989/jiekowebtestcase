@@ -76,7 +76,7 @@ if __name__ == '__main__':
     #报告命名格式
     now = time.strftime('%Y-%m-%d %H%M%S')
     #报告文件完整路径
-    report_name = report_dir + '\\'+ now + ' result.html'
+    report_name = report_dir + '\\'+ now + ' resu lt.html'
     #打开文件再报告文件写入测试结果
     with open(report_name,'wb') as f:
         runner = BSTestRunner(stream = f,title ='河西力量公众号接口测试 Test Report',
