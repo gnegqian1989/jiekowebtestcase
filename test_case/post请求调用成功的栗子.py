@@ -38,11 +38,13 @@ class TianYuan:
             # print (href_list)
 
     def get_url_list(self, href_lists):
+       print (href_lists)
        url_list = []
        for href_list in href_lists:
            for i in href_list:
             url = "http://www.tylaw.com.cn/CN/{}".format(i)
             url_list.append(url)
+            print (i)
             print(url)
            return url_list
 
